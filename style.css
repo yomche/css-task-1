@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.about-authors {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-authors-heading {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 24px;
+}
+
+.authors-content {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.authors-content-elisabeth {
+  max-width: 400px;
+  margin: 2.5px;
+}
+
+.authors-content-eric {
+  max-width: 400px;
+  margin: 2.5px;
+}
+
+.list-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.list-of-content {
+  max-width: 900px;
+}
+
+.list-of-content-heading {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px;
+}
+
+.list-of-content-flex-container {
+  max-width: 900px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list-of-content-contents {
+  max-width: 500px;
+}
+
+.list-of-content-item {
+  list-style: none;
+}
+
+.text-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.text-content-component {
+  max-width: 900px;
+  margin: auto;
+}
+
+.text-content-heading {
+  font-family: "Comic Sans MS", cursive;
+  font-size: 24px;
+  text-align: center;
+  margin: 20px;
+}
+
+.text-content-text {
+  font-size: 16px;
+  max-width: 860px;
+  margin-bottom: 20px;
+}
+
+.text-content-flex-container {
+  max-width: 900px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.text-content-list {
+  list-style: none;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+/*@media (max-width: 900px) {
+      .authors-content {
+        width: 500px;
+        margin: auto;
+      }
+      .list-content {
+        width: 500px;
+        margin: auto;
+      }
+      .list-of-content {
+        width: 500px;
+        margin: auto;
+      }
+      .text-content { 
+        width: 500px;
+        margin: auto;
+      } 
+      .text-content-component { 
+          width: 500px;
+        margin: auto;
+      }
+      .text-content-text { 
+          width: 500px;
+          margin: auto;
+      }
+    }*/
