@@ -6,16 +6,17 @@
 .authors-content {
   max-width: 900px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .authors-content__heading {
   font-family: "Comic Sans MS", cursive;
   font-size: 24px;
+  transition: 3s linear;
 }
 
 .authors-content-container {
-  margin-top: 40px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,15 +34,18 @@
 .authors-content-container__elisabeth-photo,
 .authors-content-container__eric-photo {
   width: 400px;
+  transition: 3s linear;
 }
 
 .list-content {
   max-width: 900px;
   margin: auto;
+  transition: 3s linear;
 }
 
 .list-content-summary {
   max-width: 900px;
+  transition: 3s linear;
 }
 
 .list-content-summary__heading {
@@ -49,6 +53,7 @@
   font-size: 24px;
   text-align: center;
   margin: 20px;
+  transition: 3s linear;
 }
 
 .list-content-summary__container {
@@ -59,10 +64,13 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  transition: 3s linear;
 }
 
 .list-content-summary__element {
   max-width: 500px;
+  margin-left:20px;
+  transition: 3s linear;
 }
 
 .list-content-summary__item {
@@ -76,11 +84,13 @@
 .text-content {
   max-width: 900px;
   margin: auto;
+  transition: 3s linear;
 }
 
 .text-content-component {
   max-width: 900px;
   margin: auto;
+  transition: 3s linear;
 }
 
 .text-content-component__heading {
@@ -88,12 +98,18 @@
   font-size: 24px;
   text-align: center;
   margin: 20px;
+  transition: 3s linear;
 }
 
-.text-content__paragraph {
+.text-content-component__subheading{
+  transition: 3s linear;
+}
+
+.text-content-component__paragraph {
   font-size: 16px;
   max-width: 860px;
   margin-bottom: 20px;
+  transition: 3s linear;
 }
 
 .text-content-component__container {
@@ -104,6 +120,7 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  transition: 3s linear;
 }
 
 .text-content-component__element_numbering {
@@ -129,9 +146,9 @@
   .authors-content {
     max-width: 900px;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 20px;
   }
-  
+
   .authors-content-container {
     display: grid;
     justify-content: center;
@@ -153,34 +170,45 @@
   }
 }
 
-@media (max-width: 900px) { 
+@media (max-width: 890px) {
   .list-content-summary__container {
-    width: 400px;
+    max-width: 400px;
     margin: auto;
   }
-  .text-content-component__subheading, 
+  .text-content-component__subheading,
   .text-content-component__paragraph,
-  .text-content-component__container { 
-    width: 400px;
+  .text-content-component__container {
+    max-width: 400px;
     margin: auto;
     padding-left: 30px;
     padding-right: 30px;
   }
-  .authors-content__heading { 
-    padding-left:40px;
-  }
-}
-/* 
-@media screen and (max-width: 400px) {
   .authors-content__heading {
-    font-size: 90%;
+    padding-left: 40px;
   }
-.authors-content-container__elisabeth-photo,
-.authors-content-container__eric-photo {
-  width: 70%;
-}
-.authors-content { 
-  width: 98%;
 }
 
-} */
+@media screen and (max-width: 480px) {
+  .authors-content__heading,
+  .list-content-summary__heading,
+  .text-content-component__heading,
+  .list-content-summary__element,
+  .authors-content-container__elisabeth-text,
+  .authors-content-container__eric-text,
+  .text-content-component__subheading,
+  .text-content-component__paragraph,
+  .text-content-component__element {
+    font-size: 90%;
+    margin: auto;
+  }
+  .authors-content-container__elisabeth-photo,
+  .authors-content-container__eric-photo {
+    width: 70%;
+  }
+  .authors-content {
+    width: 98%;
+  }
+  .list-content-summary__element {
+    margin-left:20px;
+  }
+}
