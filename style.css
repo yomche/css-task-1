@@ -20,22 +20,17 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.authors-content-container__elisabeth {
-  width: 400px;
-}
-
-.authors-content-container__eric {
-  width: 400px;
-}
-
+.authors-content-container__elisabeth,
+.authors-content-container__eric,
+.authors-content-container__elisabeth-photo,
 .authors-content-container__eric-photo {
   width: 400px;
 }
@@ -62,24 +57,20 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
 .list-content-summary__element {
   max-width: 500px;
 }
 
-.list-content-summary__item_float {
-  float: right;
-}
-
-.list-content-summary__item_style {
-  list-style: none;
-}
-
 .list-content-summary__item {
   list-style: none;
+}
+
+.list-content-summary__item_numbering {
+  float: right;
 }
 
 .text-content {
@@ -111,11 +102,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 
-.text-content-component_float {
+.text-content-component__element_numbering {
   float: right;
 }
 
@@ -128,12 +119,19 @@
 @supports (display: grid) {
   .main {
     max-width: 900px;
+    max-height: 1873px;
     margin: auto;
-    margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr;
   }
+
+  .authors-content {
+    max-width: 900px;
+    margin: 0;
+    margin-top: 40px;
+  }
+  
   .authors-content-container {
     display: grid;
     justify-content: center;
@@ -141,46 +139,48 @@
     grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
     grid-column-gap: 85px;
   }
-  .list-content-summary__container {
-    max-width: 900px;
-  }
-  .text-content-component__container {
-    max-width: 900px;
-  }
-} 
 
-/*
-@supports not (display: grid) {
-  .authors-content-container {
-    margin-top: 40px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+  .list-content {
+    max-width: 900px;
+    margin: 0;
   }
+
   .list-content-summary__container {
     max-width: 900px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
   }
   .text-content-component__container {
     max-width: 900px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
   }
-} 
-*/
+}
+
+@media (max-width: 900px) { 
+  .list-content-summary__container {
+    width: 400px;
+    margin: auto;
+  }
+  .text-content-component__subheading, 
+  .text-content-component__paragraph,
+  .text-content-component__container { 
+    width: 400px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .authors-content__heading { 
+    padding-left:40px;
+  }
+}
+/* 
+@media screen and (max-width: 400px) {
+  .authors-content__heading {
+    font-size: 90%;
+  }
+.authors-content-container__elisabeth-photo,
+.authors-content-container__eric-photo {
+  width: 70%;
+}
+.authors-content { 
+  width: 98%;
+}
+
+} */
