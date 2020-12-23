@@ -12,6 +12,8 @@
 .authors-content__heading {
   font-family: "Comic Sans MS", cursive;
   font-size: 24px;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
@@ -34,17 +36,23 @@
 .authors-content-container__elisabeth-photo,
 .authors-content-container__eric-photo {
   width: 400px;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
 .list-content {
   max-width: 900px;
   margin: auto;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
 .list-content-summary {
   max-width: 900px;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
@@ -53,6 +61,8 @@
   font-size: 24px;
   text-align: center;
   margin: 20px;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
@@ -64,12 +74,16 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
 .list-content-summary__element {
   max-width: 500px;
-  margin-left:20px;
+  margin-left: 20px;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
@@ -84,12 +98,16 @@
 .text-content {
   max-width: 900px;
   margin: auto;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
 .text-content-component {
   max-width: 900px;
   margin: auto;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
@@ -98,10 +116,14 @@
   font-size: 24px;
   text-align: center;
   margin: 20px;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
-.text-content-component__subheading{
+.text-content-component__subheading {
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
@@ -109,6 +131,8 @@
   font-size: 16px;
   max-width: 860px;
   margin-bottom: 20px;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
@@ -120,6 +144,8 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-transition: 3s linear;
+  -o-transition: 3s linear;
   transition: 3s linear;
 }
 
@@ -209,6 +235,6 @@
     width: 98%;
   }
   .list-content-summary__element {
-    margin-left:20px;
+    margin-left: 20px;
   }
 }
