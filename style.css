@@ -176,6 +176,7 @@
   }
 
   .authors-content-container {
+    margin-top: 20px;
     display: grid;
     justify-content: center;
     align-items: baseline;
@@ -198,7 +199,7 @@
 
 @media (max-width: 890px) {
   .list-content-summary__container {
-    max-width: 400px;
+    max-width: 410px;
     margin: auto;
   }
   .text-content-component__subheading,
@@ -224,7 +225,7 @@
   .text-content-component__subheading,
   .text-content-component__paragraph,
   .text-content-component__element {
-    font-size: 90%;
+    font-size: 84%;
     margin: auto;
   }
   .authors-content-container__elisabeth-photo,
